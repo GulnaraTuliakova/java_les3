@@ -19,19 +19,18 @@ public class les3HW {
         getMin(list);
         getMax(list);
         getAverage(list);
-
     }
 
     // Нужно удалить из него четные числа
     public static List<Integer> removeEvenValue(List<Integer> list) {
-        for (int item : list) {
-            if (item % 2 == 0) {
-                list.remove(item);
+        for (int i = 0; i < list.size(); i++) {
+            if (list.get(i) % 2 == 0) {
+                list.remove(i);
             }
+
         }
         System.out.println(list);
-        return list;
-        // return new ArrayList<>(list);
+        return (list);
     }
 
     // Найти минимальное значение
@@ -71,5 +70,4 @@ public class les3HW {
         System.out.println("Среднее значение - " + aver);
         return aver;
     }
-    }
-
+}
